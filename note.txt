@@ -1,0 +1,41 @@
+Backend packages list
+1 express
+2 bcrypt
+3 concurrently
+4 cookie-parser
+5 date-and-time
+6 dotenv
+7 formidable
+8 jsonwebtoken
+9 mongoose
+10 nodemailer
+11 validator 
+12 body-parser
+npm i express bcrypt body-parser cookie-parser cors date-and-time dotenv jsonwebtoken mongoose nodemailer validator concurrently formidable
+npm install nodemon --save-dev
+
+npm run server 
+
+
+Frontend packages list
+1 apexcharts
+2 axios
+3 jodit
+4 jodit-react
+5 jwt-decode
+6 moment
+7 html-totext
+8 node-sass
+9 react-apexcharts
+10 react-facebook-login
+11 react-google-login
+12 react-helmet
+13 react-hot-toast
+14 react-html-parser
+15 react-redux
+16 react-icons
+17 react-router-dom
+18 redux-thunk
+19 redux
+20 @emailjs/browser
+npm i apexcharts axios react-facebook-login react-google-login jodit jodit-react jwt-decode moment html-to-text node-sass react-apexcharts react-helmet react-hot-toast react-html-parser react-redux  redux react-router-dom react-icons redux-thunk redux @emailjs/browser --legacy-peer-deps
