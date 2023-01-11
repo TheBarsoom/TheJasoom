@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import PopularArtical from "./PopularArtical";
 import { FaChevronRight } from "react-icons/fa";
+import HomeArtical from "./HomeArtical";
 const Home = () => {
   return (
     <div className="home">
@@ -11,7 +12,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-8">
-              <h3>Articel</h3>
+             <HomeArtical/>
             </div>
             <div className="col-4">
               <div className="search-category-tag">
