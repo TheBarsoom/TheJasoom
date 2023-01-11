@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 // import { GlobalStyle } from "../GlobalStyle";
 
 import Layout from "./Layout";
-import { AdminLogin, Dashboard, EmailVerify, Home, Login, Register,Error } from "../components";
+import { AdminLogin, ProtectRoute, EmailVerify, Home, Login, Register,Error, Dashboard } from "../components";
 
 
 
@@ -22,28 +22,28 @@ const MainRoute = () => {
             <Route path='artical/tag/:tagSlug/:currentPage?' element={<Home/>}  />
             <Route path='artical/search/:searchValue' element={<Home/>}  />
 
-            <ProtectRoute path="/dashborad" element={<Dashborad/>}  />
+            <Route path="/dashborad" element={<ProtectRoute/>}  />
 
             <Route path="dashborad/all-article/:currentPage?" element={<Dashboard/>}  />
-            <Route path="dashborad/article-add" element={<Dashborad/>}  />
-            <Route path="dashborad/article/edit/:articleSlug" element={<Dashborad/>}  />
+            <Route path="dashborad/article-add" element={<Dashboard/>}  />
+            <Route path="dashborad/article/edit/:articleSlug" element={<Dashboard/>}  />
 
-            <Route path="dashborad/all-category/:currentPage?" element={<Dashborad/>}  />
-            <Route path="dashborad/add-category" element={<Dashborad/>}  />
-            <Route path="dashborad/category/edit/:cateSlug" element={<Dashborad/>}  />
+            <Route path="dashborad/all-category/:currentPage?" element={<Dashboard/>}  />
+            <Route path="dashborad/add-category" element={<Dashboard/>}  />
+            <Route path="dashborad/category/edit/:cateSlug" element={<Dashboard/>}  />
 
-            <Route path="dashborad/all-tag/:currentPage?" element={<Dashborad/>}  />
-            <Route path="dashborad/add-tag" element={<Dashborad/>}  />
-            <Route path="dashborad/tag/edit/:tagSlug" element={<Dashborad/>}  />
+            <Route path="dashborad/all-tag/:currentPage?" element={<Dashboard/>}  />
+            <Route path="dashborad/add-tag" element={<Dashboard/>}  />
+            <Route path="dashborad/tag/edit/:tagSlug" element={<Dashboard/>}  />
 
-            <Route path="dashborad/all-sub-admin/:currentPage?" element={<Dashborad/>}  />
+            <Route path="dashborad/all-sub-admin/:currentPage?" element={<Dashboard/>}  />
 
-            <Route path="dashborad/all-user/:currentPage?" element={<Dashborad/>}  />
+            <Route path="dashborad/all-user/:currentPage?" element={<Dashboard/>}  />
 
-            <Route path="dashborad/sub-admin-profile/:adminId" element={<Dashborad/>}  />
+            <Route path="dashborad/sub-admin-profile/:adminId" element={<Dashboard/>}  />
 
-            <Route path="dashborad/comments/:currentPage?" element={<Dashborad/>}  />
-
+            <Route path="dashborad/comments/:currentPage?" element={<Dashboard/>}  />
+            Dashboard
 
           <Route path="*" element={<Error />} />
         </Route>
