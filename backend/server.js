@@ -5,7 +5,8 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const dbConnect = require("./config/dbConnect");
-
+const mongoose = require("mongoose")
+mongoose.set('strictQuery', true);
 app.get("/", (req, res) => {
   res.send("server is running");
 });
